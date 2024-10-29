@@ -1,0 +1,25 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec 'cypress/e2e/4-POM/login.cy.js'",
+    "test:open": "npx cypress run --spec 'cypress/e2e/3-practice/advanced.cy.js'",
+    "test:record": "cypress run --record",
+    "test:reporter": "cypress run --reporter mochawesome",
+    "test:spec": "cypress run --spec",
+    "test:tag": "cypress run --tag",
+    "test:config": "cypress run --config",
+    "test:env": "cypress run --env",
+    "test:global": "cypress run --global"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "cypress": "^13.15.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
